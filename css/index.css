@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Roboto', sans-serif; */
+    overflow: hidden;
+}
+
+body {
+    background-color: #CECEA7;
+}
+
+#pointer {
+    position: absolute;
+    padding: 5px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: translate3d(-50%, -50%, 0);
+    transition: transform 0.2s cubic-bezier(.02, 1.23, .79, 1.08);
+}
+
+.paperplane {
+    top: 65%;
+    left: 5%;
+    transform: scale(0.7);
+    position: absolute;
+    /* animation: paperPlane 2s linear forwards; */
+}
+
+.paperplane rect {
+    cursor: pointer;
+}
+
+.ligne {
+    position: absolute;
+}
+
+
+@keyframes paperPlane {
+    0% {
+        top: 65%;
+        left: 5%;
+        rotate: 0deg;
+    }
+
+    25% {
+        top: 60%;
+        left: 30%;
+        rotate: 10deg;
+    }
+
+    50% {
+        top: 70%;
+        left: 80%;
+        rotate: -40deg;
+    }
+
+    55% {
+        top: 65%;
+        left: 85%;
+        rotate: -90deg;
+        transform: scaleX(1)
+    }
+
+    60% {
+        top: 55%;
+        left: 80%;
+
+        transform: scaleY(-1);
+        rotate: 240deg;
+    }
+
+    80% {
+        top: 25%;
+        left: 60%;
+
+        transform: scaleY(-1);
+        rotate: 240deg;
+    }
+
+    90% {
+        top: 5%;
+        left: 40%;
+        transform: scaleY(-1);
+        rotate: 240deg;
+    }
+
+    95% {
+        transform: scaleY(-10);
+    }
+
+    100% {
+        transform: scale(-100);
+    }
+
+
+}
