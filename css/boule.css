@@ -41,6 +41,10 @@ body {
     background: #000;
 }
 
+#relativeBlock {
+    position: relative;
+}
+
 .scene {
     position: absolute;
     top: 22vh;

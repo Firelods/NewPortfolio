@@ -8,7 +8,61 @@
     /* overflow: hidden; */
     /* cursor: none; */
     font-family: 'Lato';
+    scroll-behavior: smooth;
 }
+
+:root {
+    --primary-color: #D9D9D9;
+}
+
+main {
+    display: flex;
+    overflow-x: hidden;
+}
+
+section {
+    min-width: 100vw;
+    max-height: 100vh;
+}
+
+.separator {
+    min-height: auto;
+    margin-top: 68px;
+    min-width: 1vw;
+    width: 2.8em;
+    height: calc(100vh - 68px);
+    /* background-color: aliceblue; */
+    border-left: #D9D9D9 1px solid;
+    border-right: #D9D9D9 1px solid;
+}
+
+.separator div {
+    padding-left: 0.1em;
+    width: 100%;
+}
+
+.separator p {
+    /* padding-left: 0.1em; */
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    color: var(--primary-color);
+    font-size: 2em;
+    height: max-content;
+    transition: all .1s ease;
+    display: flex;
+    align-items: center;
+}
+
+.separator p span {
+    padding: 5px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    writing-mode: horizontal-tb;
+    text-orientation: mixed;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
 
 a:visited {
     color: initial;
@@ -18,11 +72,19 @@ body {
     position: relative;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(117.64deg, #000000 32.82%, #080606 74.64%, rgba(5, 6, 6, 0.96) 102.41%);
+    background: linear-gradient(117.64deg, #000000 32.82%, #080606 74.64%, rgba(5, 6, 6, 0.96) 102.41%) !important;
+    overflow: hidden;
+}
+
+main {
     overflow: hidden;
 }
 
 header {
+    z-index: 6;
+    /* background-color: rgba(110, 110, 110, 0.3); */
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -77,6 +139,10 @@ header div.nom {
     cursor: pointer;
 }
 
+div.titreContainer {
+    position: relative;
+}
+
 div.titreContainer h2 {
     position: absolute;
     width: 721px;
@@ -106,7 +172,10 @@ h2:nth-of-type(3) {
 }
 
 
-
+h1 {
+    margin-top: 20%;
+    color: white;
+}
 
 
 
@@ -156,3 +225,6 @@ line-height: 23px;
 
 color: #FFFFFF;
 */
+#assScrollContainer {
+    display: flex;
+}
