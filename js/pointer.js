@@ -8,4 +8,12 @@ function movePointer(e) {
 }
 
 
-const animation = document.querySelector('.paperplane');
+const pointer = document.querySelector('#pointer');
+document.addEventListener("ended", function() {
+
+    
+    const ball = document.querySelector('.ball');
+    console.log("TEst");
+    ball.style.animation+=",orbit 10s 1s infinite linear";
+    pointer.removeEventListener("ended", pointer);
+});

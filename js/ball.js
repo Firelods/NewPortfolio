@@ -8,6 +8,8 @@ const {
 document.addEventListener("mousemove", ballRotation3D);
 
 function ballRotation3D(e) {
+    const ball = document.querySelector('.ball');
+    ball.style.animation="none";
     const {
         x: mouseX,
         y: mouseY

@@ -6,12 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/index.css" type="text/css" />
     <link rel="stylesheet" href="./css/boule.css" type="text/css" />
+    <link rel="stylesheet" href="./css/searchbar.css" type="text/css" />
     <title>PortFolio</title>
   </head>
   <body>
     <header>
       <div class="nom">Clément Lefèvre</div>
-      <div class="searchbar"></div>
+      <div class="searchbar">
+        <input type="text" name="searchHref" id="search" onkeyup="search()" />
+        <div id="caret"></div>
+        <ul id="listHref">
+          <li>
+            <a href="#">
+              <div><img src="./assets/person.png" alt="person" /></div>
+              Qui suis-je ?
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div><img src="./assets/objectif.png" alt="objectif" /></div>
+              Mes objectifs</a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <div><img src="./assets/projet.png" alt="projet" /></div>
+              Mes Projets</a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <div><img src="./assets/contact.png" alt="" /></div>
+              Contactez moi</a
+            >
+          </li>
+        </ul>
+      </div>
       <div class="container">
         <div class="squares"></div>
         <div class="squares"></div>
@@ -20,7 +50,7 @@
     </header>
     <div class="titreContainer">
       <h2>ÉTUDIANT</h2>
-      <h2>DEVELOPPEUR</h2>
+      <h2>DÉVELOPPEUR</h2>
       <h2>FULL-STACK</h2>
     </div>
     <div class="scene">
@@ -57,7 +87,8 @@
       </div>
     </div>
     <div id="pointer"></div>
-    <script src="./js/pointer.js"></script>
+    <!-- <script src="./js/pointer.js"></script> -->
     <script src="./js/ball.js"></script>
+    <script src="./js/searchbar.js"></script>
   </body>
 </html>

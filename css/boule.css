@@ -44,12 +44,12 @@ body {
 .scene {
     position: absolute;
     top: 22vh;
-    left: 32vw;
+    left: 22vw;
     width: 700px;
     height: 700px;
     margin: 2% auto;
     perspective: 1000px;
-
+    z-index: -1;
 }
 
 .wrapper {
@@ -66,7 +66,7 @@ body {
     margin: 0 auto;
     transform-style: preserve-3d;
     transition: all 0.4s linear;
-    /* animation: roundandround 7.5s 1.3s infinite linear; */
+    animation: orbit 10s 1s infinite linear;
 }
 
 
@@ -85,14 +85,14 @@ ul {
     border-style: groove;
     border-radius: 50%;
     opacity: 1;
-    animation: show 0.75s forwards ease-in-out;
     color: red;
-    animation: orbit 4s 1.3s infinite linear;
+    animation: orbit 4s 1.3s infinite linear, show 0.75s forwards ease-in-out;
+    animation-delay: 1.4s;
 }
 
 .bigRing#deux {
     color: blue;
-    animation: orbit2 4s 1.3s infinite linear;
+    animation: orbit2 4s 1.3s infinite linear, show 0.75s forwards ease-in-out;
 }
 
 .ball .ring {
