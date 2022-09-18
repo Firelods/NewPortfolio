@@ -10,42 +10,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script> -->
     <script type="module" src="./js/scroll.js"></script>
     <script type="module" src="./js/smoothScroll.js"></script>
-    <link rel="stylesheet" href="./css/searchbar.css" type="text/css" />
-
+    <link rel="stylesheet" href="./css/presentation.css" />
     <title>PortFolio</title>
   </head>
   <body>
     <header>
       <div class="nom">Clément Lefèvre</div>
-      <div class="searchbar">
-        <input type="text" name="searchHref" id="search" onkeyup="search()" />
-        <div id="caret"></div>
-        <ul id="listHref">
-          <li>
-            <a id="person">
-              <div><img src="./assets/person.png" alt="person" /></div>
-              Qui suis-je ?
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <div><img src="./assets/objectif.png" alt="objectif" /></div>
-              Mes objectifs</a
-            >
-          </li>
-          <li>
-            <a href="#">
-              <div><img src="./assets/projet.png" alt="projet" /></div>
-              Mes Projets</a
-            >
-          </li>
-          <li>
-            <a href="#">
-              <div><img src="./assets/contact.png" alt="" /></div>
-              Contactez moi</a
-            >
-          </li>
-        </ul>
+      <div id="headerTitles">
+        <div id="person">Ma vie</div>
+        <div>Mes objectifs</div>
+        <div>Mes projets</div>
+        <div>Contact</div>
       </div>
       <div class="container">
         <div class="squares"></div>
@@ -108,13 +83,13 @@
         </section>
         <section id="presentation">
           <h1 id="suisJe">Clément Lefèvre</h1>
-          <h1>Étudiant à Nice</h1>
-          <h1>Développeur Web <i>en Devenir</i></h1>
+          <h1 id="student">Étudiant à Nice</h1>
+          <h1 id="devWeb">Développeur Web</h1>
+          <h1 id="fullStack">Full Stack <i>en devenir</i></h1>
         </section>
       </div>
     </main>
     <!-- <script src="./js/pointer.js"></script> -->
     <script src="./js/ball.js"></script>
-    <script src="./js/searchbar.js"></script>
   </body>
 </html>

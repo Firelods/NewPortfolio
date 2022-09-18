@@ -8,6 +8,8 @@ const asscroll = new ASScroll({
 
 })
 
+
+
 window.addEventListener('load', () => {
     asscroll.enable({
         horizontalScroll: true

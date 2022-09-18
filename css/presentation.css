@@ -1,0 +1,67 @@
+/* Clément Lefèvre */
+#presentation {
+    position: relative;
+}
+
+h1 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 75px;
+
+    color: #FFFFFF;
+}
+
+#suisJe {
+    position: absolute;
+    width: 580px;
+    height: 115px;
+    left: 147px;
+    top: 240px;
+
+
+}
+
+
+
+#devWeb {
+
+    position: absolute;
+    width: 580px;
+    height: 115px;
+    left: 119px;
+    top: 511px;
+
+
+}
+
+/* Développeur Web */
+
+
+
+
+/* Full Stack en devenir */
+#fullStack {
+    position: absolute;
+    width: 691px;
+    height: 113px;
+    left: 222px;
+    top: 608px;
+
+}
+
+
+
+
+
+/* Étudiant à Nice */
+#student {
+    position: absolute;
+    width: 580px;
+    height: 115px;
+    left: 245px;
+    top: 339px;
+
+
+}
