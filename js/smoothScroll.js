@@ -1,3 +1,6 @@
+import gsap from "https://cdn.skypack.dev/gsap@3.6.1";
+
+
 var text = document.querySelector(".separator div p");
 
 

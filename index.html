@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/index.css" type="text/css" />
     <link rel="stylesheet" href="./css/boule.css" type="text/css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script> -->
+    <script type="module" src="./js/scroll.js"></script>
+    <script type="module" src="./js/smoothScroll.js"></script>
     <link rel="stylesheet" href="./css/searchbar.css" type="text/css" />
 
     <title>PortFolio</title>
@@ -20,7 +22,7 @@
         <div id="caret"></div>
         <ul id="listHref">
           <li>
-            <a href="#suisJe">
+            <a id="person">
               <div><img src="./assets/person.png" alt="person" /></div>
               Qui suis-je ?
             </a>
@@ -112,8 +114,5 @@
     <!-- <script src="./js/pointer.js"></script> -->
     <script src="./js/ball.js"></script>
     <script src="./js/searchbar.js"></script>
-
-    <script type="module" src="./js/scroll.js"></script>
-    <script type="module" src="./js/smoothScroll.js"></script>
   </body>
 </html>

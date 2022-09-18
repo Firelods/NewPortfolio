@@ -2,8 +2,11 @@
 import ASScroll from "https://cdn.skypack.dev/@ashthornton/asscroll"
 import gsap from "https://cdn.skypack.dev/gsap@3.6.1";
 import ScrollTrigger from "https://cdn.skypack.dev/gsap@3.6.1/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
-const asscroll = new ASScroll()
+
+const asscroll = new ASScroll({
+    ease: 0.1,
+
+})
 
 window.addEventListener('load', () => {
     asscroll.enable({
@@ -11,7 +14,7 @@ window.addEventListener('load', () => {
     })
 })
 
-
+gsap.registerPlugin(ScrollTrigger);
 ScrollTrigger.defaults({
     scroller: asscroll.containerElement
 })
@@ -31,3 +34,12 @@ ScrollTrigger.scrollerProxy(asscroll.containerElement, {
 });
 
 asscroll.on("update", ScrollTrigger.update);
+
+const person = document.getElementById("person");
+
+person.addEventListener("click", goToMoi)
+
+function goToMoi() {
+    console.log("goToMoi");
+    asscroll.scrollTo(1300);
+};
