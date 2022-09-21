@@ -87,13 +87,12 @@ ul {
     border-style: groove;
     border-radius: 50%;
     opacity: 1;
-    color: red;
     animation: orbit 4s 1.3s infinite linear, show 0.75s forwards ease-in-out;
     animation-delay: 1.4s;
 }
 
 .bigRing#deux {
-    color: blue;
+    
     animation: orbit2 4s 1.3s infinite linear, show 0.75s forwards ease-in-out;
 }
 

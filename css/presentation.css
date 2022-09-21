@@ -65,3 +65,12 @@ h1 {
 
 
 }
+
+#presentation p{
+    position: absolute;
+    width: 20vw;
+    color: white;
+    left: 70%;
+    top:30%;
+    font-size: 2em;
+}
