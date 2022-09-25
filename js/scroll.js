@@ -41,7 +41,15 @@ const person = document.getElementById("person");
 
 person.addEventListener("click", goToMoi)
 
+const skills = document.getElementById("objectif");
+
+skills.addEventListener("click", gotoSkills)
+
 function goToMoi() {
     console.log("goToMoi");
     asscroll.scrollTo(1300);
 };
+
+function gotoSkills() {
+    asscroll.scrollTo(3500);
+}

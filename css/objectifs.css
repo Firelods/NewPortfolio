@@ -1,0 +1,16 @@
+#autrePartie p:nth-of-type(1) {
+    color: white;
+    width: 30vw;
+    top: 30%;
+    left: 10%;
+
+}
+
+#autrePartie p {
+    position: absolute;
+    font-size: 2em;
+}
+
+#autrePartie {
+    position: relative;
+}

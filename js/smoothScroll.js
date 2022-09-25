@@ -69,7 +69,7 @@ var autrePartie = document.querySelector("#autrePartie");
 gsap.to(p1, {
     scrollTrigger: {
         trigger: autrePartie,
-        start: 1300,
+        start: 900,
         // pin: true,
         // markers: true,
         end: () => autrePartie.offsetWidth + 1500,
@@ -86,7 +86,7 @@ var p2 = document.querySelector("#presentation p:nth-of-type(2)");
 gsap.to(p2, {
     scrollTrigger: {
         trigger: autrePartie,
-        start: 1300,
+        start: 900,
         // pin: true,
         // markers: true,
         end: () => autrePartie.offsetWidth + 1500,
@@ -98,6 +98,7 @@ gsap.to(p2, {
     ease: "ease",
 });
 
+
 var text2 = document.querySelector(".separator2 div p");
 
 
@@ -107,7 +108,7 @@ gsap.to(text2, {
         trigger: text2,
         start: 1500,
         // markers: true,
-        end: () => 3000,
+        end: () => 5000,
         scrub: true,
         invalidateOnRefresh: true
     },
