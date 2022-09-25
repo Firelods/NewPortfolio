@@ -46,7 +46,7 @@ h1 {
     position: absolute;
     width: 691px;
     height: 113px;
-    left: 222px;
+    left: 500px;
     top: 608px;
 
 }
@@ -66,11 +66,21 @@ h1 {
 
 }
 
-#presentation p{
+#presentation p:nth-of-type(1) {
     position: absolute;
-    width: 20vw;
+    width: 30vw;
     color: white;
     left: 70%;
-    top:30%;
+    top: 30%;
+    font-size: 2em;
+
+}
+
+#presentation p:nth-of-type(2) {
+    position: absolute;
+    width: 30vw;
+    color: white;
+    left: 70%;
+    top: 50%;
     font-size: 2em;
 }
