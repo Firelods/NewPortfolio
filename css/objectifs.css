@@ -14,3 +14,19 @@
 #autrePartie {
     position: relative;
 }
+
+#autrePartie img{
+    position: absolute;
+    top: 83%;
+    left: 0%;
+    width: 80px;
+    height: 80px;
+    /*background-color: var(--bg-color);
+    */filter: brightness(0.80);
+    -webkit-filter: brightness(0.8);
+    transform: rotate(-27deg);
+    -webkit-transform: rotate(-27deg);
+    -moz-transform: rotate(-27deg);
+    -ms-transform: rotate(-27deg);
+    -o-transform: rotate(-27deg);
+}

@@ -27,7 +27,7 @@ section {
 }
 
 .separator,
-.separator2 {
+.separator2,.separator3 {
     min-height: auto;
     margin-top: 68px;
     min-width: 1vw;
@@ -39,13 +39,13 @@ section {
 }
 
 .separator div,
-.separator2 div {
+.separator2 div,.separator3 div {
     padding-left: 0.1em;
     width: 100%;
 }
 
 .separator p,
-.separator2 p {
+.separator2 p ,.separator3 div{
     /* padding-left: 0.1em; */
     writing-mode: vertical-rl;
     text-orientation: mixed;
@@ -58,7 +58,7 @@ section {
 }
 
 .separator p span,
-.separator2 p span {
+.separator2 p span,.separator3 p span {
     padding: 5px;
     border-radius: 50%;
     background-color: var(--primary-color);

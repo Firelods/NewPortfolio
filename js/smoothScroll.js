@@ -115,3 +115,20 @@ gsap.to(text2, {
     y: -innerHeight,
     ease: "ease",
 })
+
+var plane= document.querySelector("#autrePartie img");
+
+gsap.to(plane, {
+    scrollTrigger: {
+        trigger: text2,
+        start: 3000,
+        // markers: true,
+        end: () => 7000,
+        scrub: true,
+        invalidateOnRefresh: true
+    },
+    x: 1920,
+    y:-800,
+    rotation:0,
+    ease: "ease",
+})
