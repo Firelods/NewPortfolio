@@ -37,6 +37,23 @@ ScrollTrigger.scrollerProxy(asscroll.containerElement, {
 
 asscroll.on("update", ScrollTrigger.update);
 
+const point = document.querySelector("#but");
+const trait = document.querySelector("#trait");
+
+asscroll.on('scroll', scrollPos => {
+    if (scrollPos >= 3394) {
+        console.log("scrollPos >= 3394");
+        point.classList.add("active");
+        trait.classList.add("active");
+    } else {
+        point.classList.remove("active");
+        trait.classList.remove("active");
+    }
+})
+
+
+
+
 const person = document.getElementById("person");
 
 person.addEventListener("click", goToMoi)
