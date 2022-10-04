@@ -38,14 +38,27 @@ ScrollTrigger.scrollerProxy(asscroll.containerElement, {
 asscroll.on("update", ScrollTrigger.update);
 
 const point = document.querySelector("#but");
-const trait = document.querySelector("#trait");
+const point2 = document.querySelector("#but2");
+const trait = document.querySelector(".trait");
+const trait2 = document.querySelector("#trait2");
 
 asscroll.on('scroll', scrollPos => {
-    if (scrollPos >= 3394) {
+    console.log(scrollPos);
+    if (scrollPos >= 3200) {
         console.log("scrollPos >= 3394");
         point.classList.add("active");
+
         trait.classList.add("active");
+
+        if (scrollPos >= 3800) {
+            point2.classList.add("active");
+            trait2.classList.add("active");
+        } else {
+            point2.classList.remove("active");
+            trait2.classList.remove("active");
+        }
     } else {
+
         point.classList.remove("active");
         trait.classList.remove("active");
     }
