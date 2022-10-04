@@ -77,7 +77,7 @@ gsap.to(p1, {
         invalidateOnRefresh: true
     },
     x: -150,
-    y: 350,
+    y: 250,
     ease: "ease",
 });
 
