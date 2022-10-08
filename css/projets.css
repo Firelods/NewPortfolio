@@ -1,0 +1,18 @@
+#projetsTop {
+    margin-top: 68px;
+    height: 50%;
+}
+
+.separatorSection {
+    height: 3px;
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
+section#projets section h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: var(--primary-color);
+    padding-top: 20px;
+    margin-left: 20px;
+}
