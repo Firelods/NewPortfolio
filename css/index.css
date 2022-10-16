@@ -194,7 +194,7 @@ header #headerTitles div:hover {
 }
 
 .squares:hover {
-    filter: drop-shadow(4px 4px 2px black) invert(75%);
+    filter: invert(25%);
 }
 
 .squares:nth-child(3):hover {
