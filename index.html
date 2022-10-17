@@ -27,8 +27,8 @@
       <div id="headerTitles">
         <div id="person">Ma vie</div>
         <div id="objectif">Mes objectifs</div>
-        <div>Mes projets</div>
-        <div>Contact</div>
+        <div id="projects">Mes projets</div>
+        <div id="contact">Contact</div>
       </div>
       <div class="container">
         <div class="squares">
@@ -43,7 +43,7 @@
             ><img id="linkedin" src="./assets/linkedin.png" alt=""
           /></a>
         </div>
-        <div class="squares" onclick="window.close();">
+        <div class="squares" id="cross">
           <span class="material-symbols-outlined"> close </span>
         </div>
       </div>
@@ -165,9 +165,7 @@
             ><div>
               <p>BUT Informatique</p>
               <p>
-                <a
-                  target="_blank"
-                  href="https://sites.google.com/lycee-jeanmoulin-draguignan.fr/lyceejeanmoulindraguignan"
+                <a target="_blank" href="https://iut.univ-cotedazur.fr/"
                   >IUT Nice</a
                 >
               </p>
@@ -192,13 +190,41 @@
           <section id="projetsTop">
             <h2>Développement Web</h2>
             <div class="projectContainer">
-              <div><img src="./assets/thumbAAPCA.png" alt="aapca" /></div>
-              <div><img src="./assets/thumbS106.png" alt="S106" /></div>
-              <div><img src="./assets/thumbS105.png" alt="S105" /></div>
+              <div>
+                <a target="_blank" href="https://github.com/Firelods/Share"
+                  ><img src="./assets/thumbShare.png" alt="Share"
+                /></a>
+              </div>
+              <div>
+                <a target="_blank" href="https://firelods.github.io/AAPCA"
+                  ><img src="./assets/thumbAAPCA.png" alt="aapca"
+                /></a>
+              </div>
+              <div>
+                <a target="_blank" href="https://firelods.github.io/S106/"
+                  ><img src="./assets/thumbS106.png" alt="S106"
+                /></a>
+              </div>
+              <div>
+                <a target="_blank" href="https://firelods.github.io/S105/"
+                  ><img src="./assets/thumbS105.png" alt="S105"
+                /></a>
+              </div>
             </div>
           </section>
           <div class="separatorSection"></div>
-          <section id="projetsBottom"><h2>Développement Logiciel</h2></section>
+          <section id="projetsBottom">
+            <h2>Développement Logiciel</h2>
+            <div class="projectContainer">
+              <div>
+                <a
+                  target="_blank"
+                  href="https://github.com/IUT-DEPT-INFO-UCA/pokae-seinksansdoozebank"
+                  ><img src="./assets/thumbS201.png" alt="S201"
+                /></a>
+              </div>
+            </div>
+          </section>
         </section>
       </div>
     </main>

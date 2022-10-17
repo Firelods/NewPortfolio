@@ -241,55 +241,45 @@ h2:nth-of-type(3) {
 }
 
 
-
-
-
-
-
-
-
-/* Rectangle 7 */
-
-/* box-sizing: border-box;
-
-position: absolute;
-width: 36px;
-height: 55px;
-left: 19px;
-top: 953px;
-
-border: 4px solid #D9D9D9;
-border-radius: 21px; */
-
-
-/* Line 2 */
-/* 
-position: absolute;
-width: 21px;
-height: 0px;
-left: 35px;
-top: 953px;
-
-border: 4px solid #D9D9D9;
-transform: rotate(90deg); */
-
-
-/* SCROLL TO DISCOVER */
-/*
-position: absolute;
-width: 264px;
-height: 26px;
-left: 69px;
-top: 974px;
-
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 600;
-font-size: 20px;
-line-height: 23px;
-
-color: #FFFFFF;
-*/
 #assScrollContainer {
     display: flex;
+}
+
+.secousse {
+    animation: secousseBody forwards 0.4s;
+    -webkit-animation: secousseBody forwards 0.4s;
+}
+
+@keyframes secousseBody {
+    0% {
+        transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+    }
+
+    25% {
+        transform: rotate(-10deg);
+        -webkit-transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
 }

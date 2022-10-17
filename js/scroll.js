@@ -76,6 +76,14 @@ const skills = document.getElementById("objectif");
 
 skills.addEventListener("click", gotoSkills)
 
+const projects = document.getElementById("projects");
+
+projects.addEventListener("click", gotoProjects)
+
+function gotoProjects() {
+    asscroll.scrollTo(5300);
+}
+
 function goToMoi() {
     console.log("goToMoi");
     asscroll.scrollTo(1300);
@@ -83,4 +91,32 @@ function goToMoi() {
 
 function gotoSkills() {
     asscroll.scrollTo(3500);
+}
+
+const cross = document.querySelector("#cross");
+
+cross.addEventListener("click", closeMenu);
+
+
+var count = 0;
+
+function closeMenu() {
+    if (count == 1) {
+        location.href = "https://google.com";
+    }
+    console.log("closeMenu");
+    count++;
+    const main = document.querySelector("main");
+    main.classList.add("secousse");
+
+}
+
+
+const contact = document.querySelector("#contact");
+
+contact.addEventListener("click", goToContact);
+
+
+function goToContact() {
+    location.href = "mailto:contact@clement-lefevre.fr";
 }

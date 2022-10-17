@@ -132,3 +132,21 @@ gsap.to(plane, {
     rotation: 0,
     ease: "ease",
 })
+
+
+var text3 = document.querySelector(".separator3 div p");
+
+
+
+gsap.to(text3, {
+    scrollTrigger: {
+        trigger: text3,
+        start: 3500,
+        // markers: true,
+        end: () => 7000,
+        scrub: true,
+        invalidateOnRefresh: true
+    },
+    y: -innerHeight,
+    ease: "ease",
+})
