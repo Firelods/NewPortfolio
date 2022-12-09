@@ -1,93 +1,131 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link rel="stylesheet" href="./css/index.css"> -->
-    <link rel="stylesheet" href="./css/presentation.css">
-    <link rel="stylesheet" href="./css/indexMobile.css">
-    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/presentation.css" />
+    <link rel="stylesheet" href="./css/indexMobile.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/boule.css" type="text/css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
-    <link rel="stylesheet" href="./css/presentationMobile.css">
+    <link rel="stylesheet" href="./css/presentationMobile.css" />
+    <link rel="stylesheet" href="./css/objectifMobile.css" />
+    <link rel="stylesheet" href="./css/projets.css" />
+    <link rel="stylesheet" href="./css/projetsMobile.css" />
     <title>Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="nom">Clément Lefèvre</div>
-        <div id="headerTitles">
-          <div id="person">Ma vie</div>
-          <div id="objectif">Mes objectifs</div>
-          <div id="projects">Mes projets</div>
-          <div id="contact">Contact</div>
+      <div class="nom">Clément Lefèvre</div>
+      <div id="headerTitles">
+        <div id="person">Ma vie</div>
+        <div id="objectif">Mes objectifs</div>
+        <div id="projects">Mes projets</div>
+        <div id="contact">Contact</div>
+      </div>
+      <div class="container">
+        <div class="squares">
+          <a href="https://github.com/Firelods" target="_blank"
+            ><img src="./assets/github.png" alt=""
+          /></a>
         </div>
-        <div class="container">
-          <div class="squares">
-            <a href="https://github.com/Firelods" target="_blank"
-              ><img src="./assets/github.png" alt=""
-            /></a>
-          </div>
-          <div class="squares">
-            <a
-              href="https://www.linkedin.com/in/cl%C3%A9ment-lefevre-19821b210"
-              target="_blank"
-              ><img id="linkedin" src="./assets/linkedin.png" alt=""
-            /></a>
-          </div>
-          <div class="squares" id="cross">
-            <span class="material-symbols-outlined"> close </span>
+        <div class="squares">
+          <a
+            href="https://www.linkedin.com/in/cl%C3%A9ment-lefevre-19821b210"
+            target="_blank"
+            ><img id="linkedin" src="./assets/linkedin.png" alt=""
+          /></a>
+        </div>
+        <div class="squares" id="cross">
+          <span class="material-symbols-outlined"> close </span>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="relativeBlock">
+        <div class="scene">
+          <div class="wrapper">
+            <ul class="ball">
+              <li class="ring"></li>
+              <li class="ring"></li>
+              <li class="ring"></li>
+              <li class="ring"></li>
+              <li class="ring"></li>
+              <li class="ring"></li>
+              <li class="ring"></li>
+              <li class="ring"></li>
+              <li class="ring"></li>
+              <li class="ring"></li>
+              <li class="ring"></li>
+              <li class="ring"></li>
+              <li class="ring"></li>
+              <li class="ring"></li>
+              <li class="ring"></li>
+              <li class="ring"></li>
+              <li class="ring"></li>
+              <li class="ring"></li>
+              <li class="ring"></li>
+              <li class="ring"></li>
+              <li class="ring"></li>
+              <li class="ring"></li>
+              <li class="ring"></li>
+              <li class="ring"></li>
+              <li class="ring"></li>
+              <li class="bigRing"></li>
+              <li class="bigRing" id="deux"></li>
+            </ul>
           </div>
         </div>
-      </header>
-      <main>
-        <div id="assScrollContainer">
-          <section id="mainTitles">
-            <div class="titreContainer">
-              <h2>ÉTUDIANT</h2>
-              <h2>DÉVELOPPEUR</h2>
-              <h2>FULL-STACK</h2>
-        
-            </div>
-          </section>
-          <section class="separator">
-            <div>
-              <p>
-                A propos de moi <span></span> A propos de moi <span></span> A
-                propos de moi <span></span> A propos de moi <span></span> A propos
-                de moi <span></span> A propos de moi <span></span> A propos de moi
-              </p>
-            </div>
-          </section>
-          <section id="presentation">
-            <h2 id="suisJe">Clément Lefèvre</h1>
-            <h2 id="student">Étudiant à Nice</h1>
-            <h2 id="devWeb">Développeur Web</h1>
-            <h2 id="fullStack">Full Stack <i>en devenir</i></h1>
+      </div>
+      <div id="assScrollContainer">
+        <section id="mainTitles">
+          <div class="titreContainer">
+            <h2>ÉTUDIANT</h2>
+            <h2>DÉVELOPPEUR</h2>
+            <h2>FULL-STACK</h2>
+          </div>
+        </section>
+        <section class="separator">
+          <div>
             <p>
-              Je suis depuis toujours passionné d’informatique et je suis en
-              permanence à la recherche de nouvelles technologies.
+              A propos de moi <span></span> A propos de moi <span></span> A
+              propos de moi <span></span> A propos de moi <span></span> A propos
+              de moi <span></span> A propos de moi <span></span> A propos de moi
             </p>
+          </div>
+        </section>
+        <section id="presentation">
+          <h2 id="suisJe">Clément Lefèvre</h2>
+          <h2 id="student">Étudiant à Nice</h2>
+          <h2 id="devWeb">Développeur Web</h2>
+          <h2 id="fullStack">Full Stack <i>en devenir</i></h2>
+          <p>
+            Je suis depuis toujours passionné d’informatique et je suis en
+            permanence à la recherche de nouvelles technologies.
+          </p>
+          <p>
+            Etudiant en BUT Informatique, je suis spécialisé dans la
+            programmation et le développement Web.
+          </p>
+        </section>
+        <section class="separator2">
+          <div>
             <p>
-              Etudiant en BUT Informatique, je suis spécialisé dans la
-              programmation et le développement Web.
+              Mes objectifs <span></span>Mes objectifs <span></span> Mes
+              objectifs <span></span>Mes objectifs <span></span> Mes objectifs
+              <span></span>Mes objectifs <span></span>Mes objectifs<span
+              ></span> Mes objectifs<span></span>Mes objectifs<span></span>Mes
+              objectifs<span></span>Mes objectifs
             </p>
-          </section>
-          <section class="separator2">
-            <div>
-              <p>
-                Mes objectifs <span></span>Mes objectifs <span></span> Mes
-                objectifs <span></span>Mes objectifs <span></span> Mes objectifs
-                <span></span>Mes objectifs <span></span>Mes objectifs<span
-                ></span> Mes objectifs<span></span>Mes objectifs<span></span>Mes
-                objectifs<span></span>Mes objectifs
-              </p>
-            </div>
-          </section>
-          <section id="autrePartie">
-            <!-- <svg
+          </div>
+        </section>
+        <section id="autrePartie">
+          <!-- <svg
               width="1920"
               height="1080"
               viewBox="0 0 1440 426"
@@ -100,93 +138,89 @@
                 stroke-width="5"
               />
             </svg> -->
-            <img src="./assets/plane.png" alt="plane" />
-  
+          <img id="plane" src="./assets/plane.png" alt="plane" />
+
+          <p>
+            J'aspire à devenir Développeur Full Stack. <br /><br />
+            Le développement Web est pour moi une des plus grandes sources de
+            travail dans l'informatique et ses possibilités sont infinies.
+          </p>
+          <h3>Mes études :</h3>
+          <div>
+            <p>Bac Mention bien</p>
+            <p>Maths Informatique</p>
             <p>
-              J'aspire à devenir Développeur Full Stack. <br /><br />
-              Le développement Web est pour moi une des plus grandes sources de
-              travail dans l'informatique et ses possibilités sont infinies.
+              <a
+                target="_blank"
+                href="https://sites.google.com/lycee-jeanmoulin-draguignan.fr/lyceejeanmoulindraguignan"
+                >Lycée Jean Moulin</a
+              >
             </p>
-            <span class="point" id="but"
-              ><div>
-                <p>Bac Mention bien</p>
-                <p>Maths Informatique</p>
-                <p>
-                  <a
-                    target="_blank"
-                    href="https://sites.google.com/lycee-jeanmoulin-draguignan.fr/lyceejeanmoulindraguignan"
-                    >Lycée Jean Moulin</a
-                  >
-                </p>
-              </div></span
-            >
-            <div class="trait"></div>
-            <span class="point" id="but2"
-              ><div>
-                <p>BUT Informatique</p>
-                <p>
-                  <a target="_blank" href="https://iut.univ-cotedazur.fr/"
-                    >IUT Nice</a
-                  >
-                </p>
-              </div></span
-            >
-            <div class="trait" id="trait2"></div>
-            <div id="toBeC">À venir ...</div>
-            <div class="level">Bac<span>+2</span></div>
-          </section>
-          <section class="separator3">
-            <div>
-              <p>
-                Mes projets <span></span>Mes projets <span></span> Mes projets
-                <span></span>Mes projets <span></span> Mes projets
-                <span></span>Mes projets <span></span>Mes projets<span></span> Mes
-                projets<span></span>Mes projets<span></span>Mes projets<span
-                ></span>Mes projets
-              </p>
+          </div>
+          <div>
+            <p>BUT Informatique</p>
+            <p>Développement d'application</p>
+            <p>
+              <a target="_blank" href="https://iut.univ-cotedazur.fr/"
+                >IUT Nice</a
+              >
+            </p>
+          </div>
+        </section>
+        <section class="separator3">
+          <div>
+            <p>
+              Mes projets <span></span>Mes projets <span></span> Mes projets
+              <span></span>Mes projets <span></span> Mes projets
+              <span></span>Mes projets <span></span>Mes projets<span></span> Mes
+              projets<span></span>Mes projets<span></span>Mes projets<span
+              ></span>Mes projets
+            </p>
+          </div>
+        </section>
+        <section id="projets">
+          <section id="projetsTop">
+            <h2>Développement Web</h2>
+            <div class="projectContainer">
+              <div>
+                <a target="_blank" href="https://github.com/Firelods/Share"
+                  ><img src="./assets/thumbShare.png" alt="Share"
+                /></a>
+              </div>
+              <div>
+                <a target="_blank" href="https://firelods.github.io/AAPCA"
+                  ><img src="./assets/thumbAAPCA.png" alt="aapca"
+                /></a>
+              </div>
+              <div>
+                <a target="_blank" href="https://firelods.github.io/S106/"
+                  ><img src="./assets/thumbS106.png" alt="S106"
+                /></a>
+              </div>
+              <div>
+                <a target="_blank" href="https://firelods.github.io/S105/"
+                  ><img src="./assets/thumbS105.png" alt="S105"
+                /></a>
+              </div>
             </div>
           </section>
-          <section id="projets">
-            <section id="projetsTop">
-              <h2>Développement Web</h2>
-              <div class="projectContainer">
-                <div>
-                  <a target="_blank" href="https://github.com/Firelods/Share"
-                    ><img src="./assets/thumbShare.png" alt="Share"
-                  /></a>
-                </div>
-                <div>
-                  <a target="_blank" href="https://firelods.github.io/AAPCA"
-                    ><img src="./assets/thumbAAPCA.png" alt="aapca"
-                  /></a>
-                </div>
-                <div>
-                  <a target="_blank" href="https://firelods.github.io/S106/"
-                    ><img src="./assets/thumbS106.png" alt="S106"
-                  /></a>
-                </div>
-                <div>
-                  <a target="_blank" href="https://firelods.github.io/S105/"
-                    ><img src="./assets/thumbS105.png" alt="S105"
-                  /></a>
-                </div>
+          <div class="separatorSection"></div>
+          <section id="projetsBottom">
+            <h2>Développement Logiciel</h2>
+            <div class="projectContainer">
+              <div>
+                <a
+                  target="_blank"
+                  href="https://github.com/IUT-DEPT-INFO-UCA/pokae-seinksansdoozebank"
+                  ><img src="./assets/thumbS201.png" alt="S201"
+                /></a>
               </div>
-            </section>
-            <div class="separatorSection"></div>
-            <section id="projetsBottom">
-              <h2>Développement Logiciel</h2>
-              <div class="projectContainer">
-                <div>
-                  <a
-                    target="_blank"
-                    href="https://github.com/IUT-DEPT-INFO-UCA/pokae-seinksansdoozebank"
-                    ><img src="./assets/thumbS201.png" alt="S201"
-                  /></a>
-                </div>
-              </div>
-            </section>
+            </div>
           </section>
-        </div>
-      </main>
-</body>
+        </section>
+      </div>
+    </main>
+    <!-- <script src="./js/mobileMotion.js"></script> -->
+    <!-- <script src="./js/close.js"></script> -->
+  </body>
 </html>
