@@ -1,31 +1,15 @@
 #assScrollContainer {
   flex-direction: column;
   overflow: hidden;
-#assScrollContainer {
-  flex-direction: column;
 }
 #mainTitles {
-#mainTitles {
 }
-section {
-  min-width: auto;
-  width: 100vw;
-  height: 85vh;
 section {
   min-width: auto;
   width: 100vw;
   height: 85vh;
 }
 
-h2 {
-  color: var(--primary-color);
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 600;
-  /* font-size: 96px; */
-  line-height: 113px;
-  /* color: white; */
-  font-size: 12vw;
 h2 {
   color: var(--primary-color);
   font-family: "Raleway";
@@ -40,12 +24,8 @@ h2 {
 h2:nth-of-type(1) {
   left: 2vw;
   top: 30vh;
-  left: 2vw;
-  top: 30vh;
 }
 h2:nth-of-type(2) {
-  left: 10vw;
-  top: 40vh;
   left: 10vw;
   top: 40vh;
 }
@@ -53,11 +33,7 @@ h2:nth-of-type(2) {
 h2:nth-of-type(3) {
   left: 6vw;
   top: 50vh;
-  left: 6vw;
-  top: 50vh;
 }
-.separator {
-  /* transform: rotate(-90deg); */
 .separator {
   /* transform: rotate(-90deg); */
 }
@@ -72,6 +48,7 @@ h2:nth-of-type(3) {
 #suisJe {
   top: 5vh;
   left: 5vw;
+  width: fit-content;
 }
 #student,
 #devWeb,
@@ -79,16 +56,8 @@ h2:nth-of-type(3) {
   position: absolute;
   width: fit-content;
   height: fit-content;
-#student,
-#devWeb,
-#fullStack {
-  position: absolute;
-  width: 580px;
-  height: 115px;
 }
 #student {
-  left: 6vw;
-  top: 12vh;
   left: 6vw;
   top: 12vh;
 }
@@ -96,12 +65,7 @@ h2:nth-of-type(3) {
 #devWeb {
   left: 8vw;
   top: 22vh;
-  left: 8vw;
-  top: 22vh;
 }
-#fullStack {
-  left: 8vw;
-  top: 30vh;
 #fullStack {
   left: 8vw;
   top: 30vh;
@@ -111,25 +75,12 @@ h2:nth-of-type(3) {
 #suisJe,
 #fullStack {
   font-size: 8vw;
-#devWeb,
-#student,
-#suisJe,
-#fullStack {
-  font-size: 8vw;
-}
-#presentation p {
-  color: white;
-  font-size: 7vw !important;
 }
 #presentation p {
   color: white;
   font-size: 7vw !important;
 }
 #presentation p:nth-of-type(2) {
-  position: absolute;
-  width: 55vw;
-  left: 10%;
-  top: 47%;
   position: absolute;
   width: 55vw;
   left: 10%;
@@ -141,15 +92,8 @@ h2:nth-of-type(3) {
   width: 45vw;
   left: 50%;
   top: 70%;
-  position: absolute;
-  width: 45vw;
-  left: 50%;
-  top: 70%;
 }
 
 #presentation {
   height: 130vh;
-#presentation {
-  height: 130vh;
 }
-

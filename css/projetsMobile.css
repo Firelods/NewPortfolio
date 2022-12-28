@@ -1,3 +1,7 @@
+#projets{
+  height: auto;
+}
+
 #projetsTop {
   overflow-y: scroll;
   height: 50vh;
