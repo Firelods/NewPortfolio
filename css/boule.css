@@ -1,213 +1,218 @@
 :root {
-    --rotationX: 0;
-    --rotationY: 0;
+  --rotationX: 0;
+  --rotationY: 0;
 }
 
 @keyframes roundandround {
-    to {
-        transform: rotateX(var(--rotationX)) rotateY(var(--rotationY));
-    }
+  to {
+    transform: rotateX(var(--rotationX)) rotateY(var(--rotationY));
+  }
 }
 
 @keyframes orbit {
-    from {
-        transform: rotateX(0deg) rotateY(360deg);
-    }
+  from {
+    transform: rotateX(0deg) rotateY(360deg);
+  }
 
-    to {
-        transform: rotateX(360deg) rotateY(0deg);
-    }
-
+  to {
+    transform: rotateX(360deg) rotateY(0deg);
+  }
 }
 
 @keyframes orbit2 {
-    from {
-        transform: rotateX(360deg) rotateY(0deg);
-    }
+  from {
+    transform: rotateX(360deg) rotateY(0deg);
+  }
 
-    to {
-        transform: rotateX(0deg) rotateY(360deg);
-    }
-
+  to {
+    transform: rotateX(0deg) rotateY(360deg);
+  }
 }
 
 @keyframes show {
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
-
-
 #relativeBlock {
-    position: relative;
+  position: relative;
 }
 
 .scene {
-    position: absolute;
-    top: 22vh;
-    left: 22vw;
-    width: 700px;
-    height: 700px;
-    margin: 2% auto;
-    perspective: 1000px;
-    z-index: -2;
+  position: absolute;
+  top: 22vh;
+  left: 22vw;
+  width: 700px;
+  height: 700px;
+  margin: 2% auto;
+  perspective: 1000px;
+  z-index: -2;
 }
 
 .wrapper {
-    width: 100%;
-    height: 100%;
-    transform: rotateX(45deg) rotateY(45deg);
-    transform-style: preserve-3d;
-
+  width: 100%;
+  height: 100%;
+  transform: rotateX(45deg) rotateY(45deg);
+  transform-style: preserve-3d;
 }
 
 .ball {
-    width: 70%;
-    height: 70%;
-    margin: 0 auto;
-    transform-style: preserve-3d;
-    transition: all 0.4s linear;
-    animation: orbit 10s 1s infinite linear;
+  width: 70%;
+  height: 70%;
+  margin: 0 auto;
+  transform-style: preserve-3d;
+  transition: all 0.4s linear;
+  animation: orbit 10s 1s infinite linear;
 }
 
-
-
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 .bigRing {
-    width: 120%;
-    height: 120%;
-    position: absolute;
-    top: -10%;
-    left: -10%;
-    border: 4px;
-    border-style: groove;
-    border-radius: 50%;
-    opacity: 1;
-    animation: orbit 4s 1.3s infinite linear, show 0.75s forwards ease-in-out;
-    animation-delay: 1.4s;
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  border: 4px;
+  border-style: groove;
+  border-radius: 50%;
+  opacity: 1;
+  animation: orbit 4s 1.3s infinite linear, show 0.75s forwards ease-in-out;
+  animation-delay: 1.4s;
 }
 
 .bigRing#deux {
-    
-    animation: orbit2 4s 1.3s infinite linear, show 0.75s forwards ease-in-out;
+  animation: orbit2 4s 1.3s infinite linear, show 0.75s forwards ease-in-out;
 }
 
 .ball .ring {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 4px;
-    border-style: double;
-    border-radius: 50%;
-    opacity: 0;
-    animation: show 0.75s forwards ease-in-out;
-    color: whitesmoke;
-
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 4px;
+  border-style: double;
+  border-radius: 50%;
+  opacity: 0;
+  animation: show 0.75s forwards ease-in-out;
+  color: whitesmoke;
 }
 
 .ring:nth-child(1) {
-    transform: rotateY(6deg);
-    animation-delay: 0s;
+  transform: rotateY(6deg);
+  animation-delay: 0s;
 }
 
 .ring:nth-child(2) {
-    transform: rotateY(12deg);
-    animation-delay: 0.1s;
+  transform: rotateY(12deg);
+  animation-delay: 0.1s;
 }
 
 .ring:nth-child(3) {
-    transform: rotateY(18deg);
-    animation-delay: 0.2s;
+  transform: rotateY(18deg);
+  animation-delay: 0.2s;
 }
 
 .ring:nth-child(4) {
-    transform: rotateY(24deg);
-    animation-delay: 0.3s;
+  transform: rotateY(24deg);
+  animation-delay: 0.3s;
 }
 
 .ring:nth-child(5) {
-    transform: rotateY(30deg);
-    animation-delay: 0.4s;
+  transform: rotateY(30deg);
+  animation-delay: 0.4s;
 }
 
 .ring:nth-child(6) {
-    transform: rotateY(36deg);
-    animation-delay: 0.5s;
+  transform: rotateY(36deg);
+  animation-delay: 0.5s;
 }
 
 .ring:nth-child(7) {
-
-    transform: rotateY(42deg);
-    animation-delay: 0.6s;
+  transform: rotateY(42deg);
+  animation-delay: 0.6s;
 }
 
 .ring:nth-child(8) {
-    transform: rotateY(48deg);
-    animation-delay: 0.7s;
+  transform: rotateY(48deg);
+  animation-delay: 0.7s;
 }
 
 .ring:nth-child(9) {
-    transform: rotateY(54deg);
-    animation-delay: 0.8s;
+  transform: rotateY(54deg);
+  animation-delay: 0.8s;
 }
 
 .ring:nth-child(10) {
-    transform: rotateY(60deg);
-    animation-delay: 0.9s;
+  transform: rotateY(60deg);
+  animation-delay: 0.9s;
 }
 
 .ring:nth-child(11) {
-    transform: rotateY(66deg);
-    animation-delay: 1s;
+  transform: rotateY(66deg);
+  animation-delay: 1s;
 }
 
 .ring:nth-child(12) {
-    transform: rotateY(72deg);
-    animation-delay: 1.2s;
+  transform: rotateY(72deg);
+  animation-delay: 1.2s;
 }
 
 .ring:nth-child(13) {
-    transform: rotateY(78deg);
-    animation-delay: 1.2s;
+  transform: rotateY(78deg);
+  animation-delay: 1.2s;
 }
 
 .ring:nth-child(14) {
-    transform: rotateY(84deg);
-    animation-delay: 1.2s;
+  transform: rotateY(84deg);
+  animation-delay: 1.2s;
 }
 
 .ring:nth-child(15) {
-    transform: rotateY(90deg);
-    animation-delay: 1.2s;
+  transform: rotateY(90deg);
+  animation-delay: 1.2s;
 }
 
 .ring:nth-child(16) {
-    transform: rotateY(96deg);
-    animation-delay: 1.2s;
+  transform: rotateY(96deg);
+  animation-delay: 1.2s;
 }
 
 .ring:nth-child(17) {
-    transform: rotateY(102deg);
-    animation-delay: 1.2s;
+  transform: rotateY(102deg);
+  animation-delay: 1.2s;
 }
 
 .ring:nth-child(18) {
-    transform: rotateY(108deg);
-    animation-delay: 1.2s;
+  transform: rotateY(108deg);
+  animation-delay: 1.2s;
 }
 
 .ring:nth-child(19) {
-    transform: rotateY(114deg);
-    animation-delay: 1.2s;
+  transform: rotateY(114deg);
+  animation-delay: 1.2s;
 }
 
 .ring:nth-child(20) {
-    transform: rotateY(120deg);
-    animation-delay: 1.2s;
+  transform: rotateY(120deg);
+  animation-delay: 1.2s;
+}
+
+@media (max-width: 768px) {
+  .scene {
+    width: 75vw;
+    height: 75vw;
+    left: 12.5vw;
+  }
+  .ball {
+    animation: none;
+    -webkit-animation: none;
+  }
+  #relativeBlock {
+    position: absolute;
+  }
 }
