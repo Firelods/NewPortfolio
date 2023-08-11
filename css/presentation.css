@@ -1,86 +1,73 @@
 /* Clément Lefèvre */
 #presentation {
-    position: relative;
+  position: relative;
 }
 
 h1 {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 64px;
-    line-height: 75px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 75px;
 
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 #suisJe {
-    position: absolute;
-    width: 580px;
-    height: 115px;
-    left: 147px;
-    top: 240px;
-
-
+  position: absolute;
+  width: 580px;
+  height: 115px;
+  left: 147px;
+  top: 20vh;
 }
-
-
-
-#devWeb {
-
-    position: absolute;
-    width: 580px;
-    height: 115px;
-    left: 119px;
-    top: 511px;
-
-
-}
-
-/* Développeur Web */
-
-
-
-
-/* Full Stack en devenir */
-#fullStack {
-    position: absolute;
-    width: 691px;
-    height: 113px;
-    left: 500px;
-    top: 608px;
-
-}
-
-
-
-
 
 /* Étudiant à Nice */
 #student {
-    position: absolute;
-    width: 580px;
-    height: 115px;
-    left: 245px;
-    top: 339px;
+  position: absolute;
+  width: 580px;
+  height: 115px;
+  left: 245px;
+  top: 40vh;
+}
+/* Développeur Web */
 
+#devWeb {
+  position: absolute;
+  width: 580px;
+  height: 115px;
+  left: 119px;
+  top: 60vh;
+}
 
+/* Full Stack en devenir */
+#fullStack {
+  position: absolute;
+  width: 691px;
+  height: 113px;
+  left: 400px;
+  top: 80vh;
 }
 
 #presentation p:nth-of-type(1) {
-    position: absolute;
-    width: 30vw;
-    color: white;
-    left: 70%;
-    top: 30%;
-    font-size: 2em;
-
+  position: absolute;
+  width: 30vw;
+  color: white;
+  left: 70%;
+  top: 30%;
+  font-size: 2em;
 }
 
 #presentation p:nth-of-type(2) {
-    position: absolute;
-    width: 30vw;
-    color: white;
-    left: 70%;
-    top: 35%;
-    font-size: 2em;
+  position: absolute;
+  width: 30vw;
+  color: white;
+  left: 70%;
+  top: 35%;
+  font-size: 2em;
+}
+
+@media screen and (max-height: 600px) {
+  #presentation p {
+    font-size: 1.7em !important;
+  }
 }

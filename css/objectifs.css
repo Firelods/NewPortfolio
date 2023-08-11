@@ -1,159 +1,161 @@
-#autrePartie>p:nth-of-type(1) {
-    color: white;
-    width: 33vw;
-    top: 15%;
-    left: 5%;
-
+#autrePartie > p:nth-of-type(1) {
+  color: white;
+  width: 33vw;
+  top: 15%;
+  left: 5%;
 }
 
-#autrePartie>p {
-    position: absolute;
-    font-size: 2em;
+#autrePartie > p {
+  position: absolute;
+  font-size: 2em;
 }
 
 #autrePartie {
-    position: relative;
+  position: relative;
 }
 
 #autrePartie img {
-    position: absolute;
-    top: 83%;
-    left: 0%;
-    width: 80px;
-    height: 80px;
-    /*background-color: var(--bg-color);
+  position: absolute;
+  top: 83%;
+  left: 0%;
+  width: 80px;
+  height: 80px;
+  /*background-color: var(--bg-color);
     */
-    filter: brightness(0.80);
-    -webkit-filter: brightness(0.8);
-    transform: rotate(-27deg);
-    -webkit-transform: rotate(-27deg);
-    -moz-transform: rotate(-27deg);
-    -ms-transform: rotate(-27deg);
-    -o-transform: rotate(-27deg);
+  filter: brightness(0.8);
+  -webkit-filter: brightness(0.8);
+  transform: rotate(-27deg);
+  -webkit-transform: rotate(-27deg);
+  -moz-transform: rotate(-27deg);
+  -ms-transform: rotate(-27deg);
+  -o-transform: rotate(-27deg);
 }
 
 .point {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 
-    transition: all 200ms;
-    border-radius: 5px;
-    -webkit-transition: all 200ms;
-    -moz-transition: all 200ms;
-    -ms-transition: all 200ms;
-    -o-transition: all 200ms;
+  transition: all 200ms;
+  border-radius: 5px;
+  -webkit-transition: all 200ms;
+  -moz-transition: all 200ms;
+  -ms-transition: all 200ms;
+  -o-transition: all 200ms;
 }
 
-.point>div {
-    margin: 1em;
+.point > div {
+  margin: 1em;
 }
 
-.point>div>p:nth-of-type(1) {
-    font-size: 1.2em;
-    font-weight: bold;
+.point > div > p:nth-of-type(1) {
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 .point div p {
-    display: none;
-    font-size: 1em;
-    color: black;
+  display: none;
+  font-size: 1em;
+  color: black;
 }
 
 @keyframes goIn {
-    0% {
-        transform: translate(0, 0);
-        -webkit-transform: translate(0, 0);
-        -moz-transform: translate(0, 0);
-        -ms-transform: translate(0, 0);
-        -o-transform: translate(0, 0);
-        filter: blur(40px);
-        -webkit-filter: blur(40px);
-    }
+  0% {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    filter: blur(40px);
+    -webkit-filter: blur(40px);
+  }
 
-    100% {
-        transform: translate(-45%, -200%);
-        -webkit-transform: translate(-45%, -200%);
-        -moz-transform: translate(-45%, -200%);
-        -ms-transform: translate(-45%, -200%);
-        -o-transform: translate(-45%, -200%);
-        width: 250px;
-        height: 100px;
-    }
+  100% {
+    transform: translate(-45%, -200%);
+    -webkit-transform: translate(-45%, -200%);
+    -moz-transform: translate(-45%, -200%);
+    -ms-transform: translate(-45%, -200%);
+    -o-transform: translate(-45%, -200%);
+    width: 250px;
+    height: 100px;
+  }
 }
 
 .point.active {
-    animation: goIn 200ms both;
-    -webkit-animation: goIn 200ms both;
+  animation: goIn 200ms both;
+  -webkit-animation: goIn 200ms both;
 }
 
 .point.active p {
-    display: block;
+  display: block;
 }
 
 .point:nth-of-type(1) {
-    position: absolute;
-    top: 70%;
-    left: 20%;
-    background-color: var(--primary-color);
+  position: absolute;
+  top: 70%;
+  left: 20%;
+  background-color: var(--primary-color);
 }
 
 .point:nth-of-type(2) {
-    position: absolute;
-    top: 49.5%;
-    left: 45.5%;
-    background-color: var(--primary-color);
+  position: absolute;
+  top: 49.5%;
+  left: 45.5%;
+  background-color: var(--primary-color);
 }
 
 .trait.active {
-    height: 100px;
+  height: 100px;
 }
 
 .trait {
-    transition: all 200ms;
-    margin-left: 9px;
-    width: 3px;
-    height: 0px;
-    transform: translateY(-100%);
-    -webkit-transform: translateY(-100%);
-    -moz-transform: translateY(-100%);
-    -ms-transform: translateY(-100%);
-    -o-transform: translateY(-100%);
-    -webkit-transition: all 200ms;
-    -moz-transition: all 200ms;
-    -ms-transition: all 200ms;
-    -o-transition: all 200ms;
-    position: absolute;
-    background-color: var(--primary-color);
+  transition: all 200ms;
+  margin-left: 9px;
+  width: 3px;
+  height: 0px;
+  transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  -webkit-transition: all 200ms;
+  -moz-transition: all 200ms;
+  -ms-transition: all 200ms;
+  -o-transition: all 200ms;
+  position: absolute;
+  background-color: var(--primary-color);
 }
 
 .trait:nth-of-type(1) {
-    top: 70%;
-    left: 20%;
-
+  top: 70%;
+  left: 20%;
 }
 
 .trait:nth-of-type(2) {
-    top: 49.5%;
-    left: 45.5%;
+  top: 49.5%;
+  left: 45.5%;
 }
 
 #toBeC {
-    position: absolute;
-    top: 30%;
-    left: 70%;
-    font-size: 5em;
-    font-weight: bold;
-    color: var(--primary-color);
-    background: rgb(119, 119, 119);
-    background: linear-gradient(90deg, rgba(119, 119, 119, 1) 3%, rgba(31, 30, 30, 1) 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  position: absolute;
+  top: 30%;
+  left: 70%;
+  font-size: 5em;
+  font-weight: bold;
+  color: var(--primary-color);
+  background: rgb(119, 119, 119);
+  background: linear-gradient(
+    90deg,
+    rgba(119, 119, 119, 1) 3%,
+    rgba(31, 30, 30, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .level {
-    position: sticky;
-    bottom: 20%;
-    left: 50%;
-    color: white;
+  position: sticky;
+  bottom: 20%;
+  left: 50%;
+  color: white;
 }
